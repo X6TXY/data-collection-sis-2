@@ -1,0 +1,15 @@
+# Web Scraping
+playwright==1.40.0
+
+# Data Processing
+pandas==2.1.3
+
+# Database
+# sqlite3 is included in Python standard library
+
+# Airflow
+apache-airflow==2.7.3
+
+# Utilities
+python-dateutil==2.8.2
+
