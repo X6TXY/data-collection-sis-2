@@ -16,6 +16,7 @@ This project implements a complete mini data pipeline for scraping, cleaning, an
 
 ## Project Structure
 
+```
 project/
 │   README.md
 │   .gitignore
@@ -30,6 +31,7 @@ project/
 │   └── loader.py
 └── data/
     └── output.db
+```
 
 
 ## Dependencies
@@ -77,18 +79,21 @@ SQLite Database
 Database file: data/output.db
 Table: pinterest_pins
 
-Schema:
-Column Name	 |    Type	 | Not Null | Default
-  id	          INTEGER	    Yes	        AUTOINCREMENT
-title	           TEXT	      Yes	          -
-description	     TEXT	       No	          -
-image_url	       TEXT	       No	          -
-pin_link	       TEXT	       No	        UNIQUE
-board_name	     TEXT	       No	          -
-author	         TEXT	       No	          -
-save_count	    INTEGER	     No	          0
-scraped_at	     TEXT	      Yes	          -
-loaded_at	       TEXT	      Yes	          -
+## SQLite Database Schema
+
+| Column Name | Type    | Not Null | Default       |
+|------------|---------|----------|---------------|
+| id         | INTEGER | Yes      | AUTOINCREMENT |
+| title      | TEXT    | Yes      | -             |
+| description| TEXT    | No       | -             |
+| image_url  | TEXT    | No       | -             |
+| pin_link   | TEXT    | No       | UNIQUE        |
+| board_name | TEXT    | No       | -             |
+| author     | TEXT    | No       | -             |
+| save_count | INTEGER | No       | 0             |
+| scraped_at | TEXT    | Yes      | -             |
+| loaded_at  | TEXT    | Yes      | -             |
+
   
 ##  Indexes:
 idx_pin_link on pin_link
