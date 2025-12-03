@@ -133,8 +133,10 @@ You must not use AI tools for generating this code according to the assignment r
 
 
 ## References
+```
 Pinterest — website used for scraping
 Playwright Python
 Apache Airflow
 Python sqlite3 module
+```
 
