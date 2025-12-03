@@ -37,20 +37,24 @@ project/
 ## Dependencies
 
 Install required Python packages:
-```bash```
+```bash
 pip install -r requirements.txt
+```
 
 Requirements include:
+```
 playwright==1.40.0 — for web scraping dynamic content
 pandas==2.1.3 — for data processing
 apache-airflow==2.7.3 — for task orchestration
 python-dateutil==2.8.2 — utility functions
 sqlite3 — included in Python standard library
 Note: After installing Playwright, run playwright install to download browser binaries.
+```
 
 
 ## Running the Pipeline
 ## 1. Run the complete pipeline manually
+```
 You can test the pipeline end-to-end before setting up Airflow:
 python run_pipeline.py --query "data science" --max-pins 150
 --query specifies the Pinterest search query
@@ -66,6 +70,7 @@ Steps included in DAG:
 Scraping (scrape_pinterest)
 Cleaning (clean_data)
 Loading to SQLite (load_to_database)
+```
 
 
 ##Run DAG:
